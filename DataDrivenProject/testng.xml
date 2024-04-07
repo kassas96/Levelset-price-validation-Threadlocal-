@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="2" data-provider-thread-count="2" verbose="0">
+    <test verbose="2" preserve-order="true" name="DataDrivenProject">
+       <classes>
+           <class name="PriceTest">
+               <methods>
+                   <include name="testDocumentPriceUsingJsonDataDriven" />
+                   <include name="testDocumentPriceUsingDataDriven" />
+               </methods>
+           </class>
+       </classes>
+
+    </test>
+</suite>
