@@ -28,7 +28,7 @@ public class PriceTest {
 
     }
 
-    @DataProvider(name="getDocmentPrice")
+    @DataProvider(name="getDocmentPrice", parallel = true)
     public Object[][] getDocmentPriceUsingJson(){
         return new Object[][]{
                 {"File a Lien","$449"},
@@ -62,7 +62,7 @@ public class PriceTest {
 
 
 
-    @DataProvider(name = "testDocumentPriceUsingExcelDataDriven")
+    @DataProvider(name = "testDocumentPriceUsingExcelDataDriven", parallel = true)
     public Object[][] testDocumentPriceUsingExcelDataDriven() throws IOException {
 
         String excelFilePath=".\\data\\data driven.xlsx";
